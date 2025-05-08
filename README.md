@@ -1,47 +1,34 @@
-🛣️ Road Inspector
-Road Inspector is a web-based application that processes uploaded road videos to detect and highlight potholes and garbage using a YOLOv12s object detection model. The application is containerized using Docker for easy deployment and scalability.
+# 🛣️ Road Inspector
 
-🚀 Features
-Upload road videos through a user-friendly web interface.
+Road Inspector is a web-based application that processes uploaded road videos to detect and highlight potholes and garbage using a **YOLOv12s** object-detection model. The application is containerized with **Docker** for easy deployment and scalability.
 
-Process videos to detect potholes and garbage using YOLOv12s.
+## 🚀 Features
 
-Display processed videos with bounding boxes highlighting detected objects.
+- Upload road videos through a user-friendly web interface.  
+- Process videos to detect potholes and garbage using YOLOv12s.  
+- Display processed videos with bounding boxes highlighting detected objects.  
+- Containerized with Docker for consistent deployment across environments.
 
-Containerized with Docker for consistent deployment across environments.
+## 🛠️ Installation
 
-🛠️ Installation
-Prerequisites
-Ensure you have the following installed on your system:
+**Prerequisites**  
+Ensure you have **Docker** installed on your system.
 
-Docker
+**Building the Docker image**
 
-Building the Docker Image
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/road-inspector.git
+git clone https://github.com/IstiaqSiaam/road-inspector.git
 cd road-inspector
-Build the Docker image:
-
-bash
-Copy
-Edit
 docker build -t road-inspector .
-Running the Docker Container
-Run the Docker container with the following command:
 
-bash
-Copy
-Edit
+
+**Running the Docker container**
+
 docker run -p 8000:80 road-inspector
-This maps port 80 inside the container to port 8000 on your host machine.
 
-📈 Usage
-Open your web browser and navigate to http://localhost:8000.
+This maps port **80** inside the container to port **8000** on your host machine.
 
-Upload a road video using the provided interface.
+## 📈 Usage
 
-The application will process the video and display it with detected potholes and garbage highlighted.
+1. Open your browser and navigate to `http://localhost:8000`.  
+2. Upload a road video using the provided interface.  
+3. The application will process the video and display it with potholes and garbage highlighted.
